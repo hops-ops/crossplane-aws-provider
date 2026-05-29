@@ -24,7 +24,7 @@ _items = [
             }
             assertResources = [
                 {
-                    apiVersion = "crossplane.ops.com.ai/v1alpha1"
+                    apiVersion = "aws.hops.ops.com.ai/v1alpha1"
                     kind = "PodIdentity"
                     metadata.name = "pod-identity"
                     spec = {
