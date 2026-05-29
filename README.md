@@ -1,4 +1,4 @@
-# crossplane-aws-provider
+# crossplane-aws-provider-stack
 
 Installs the Crossplane AWS provider family, selected AWS family providers, PodIdentity, and AWS ProviderConfig.
 
@@ -12,7 +12,7 @@ resources, and ProviderConfig can be reconciled independently.
 
 ### Stage 1: Getting Started
 
-Apply the minimal example in `examples/crossplaneawsproviders/minimal.yaml` after
+Apply the minimal example in `examples/awsproviderstacks/minimal.yaml` after
 the target cluster already has Crossplane core installed.
 
 ### Stage 2: Growing

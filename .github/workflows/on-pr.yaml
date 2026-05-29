@@ -30,10 +30,10 @@ jobs:
     with:
       examples: |
         [
-          { "example": "examples/crossplaneawsproviders/minimal.yaml" },
-          { "example": "examples/crossplaneawsproviders/full.yaml" }
+          { "example": "examples/awsproviderstacks/minimal.yaml" },
+          { "example": "examples/awsproviderstacks/full.yaml" }
         ]
-      api_path: apis/crossplaneawsproviders
+      api_path: apis/awsproviderstacks
       error_on_missing_schemas: true
 
   test:

@@ -1,7 +1,7 @@
 import models.io.upbound.dev.meta.v1alpha1 as metav1alpha1
 
-_composition = "apis/crossplaneawsproviders/composition.yaml"
-_xrd = "apis/crossplaneawsproviders/definition.yaml"
+_composition = "apis/awsproviderstacks/composition.yaml"
+_xrd = "apis/awsproviderstacks/definition.yaml"
 
 _items = [
     metav1alpha1.CompositionTest {
@@ -12,8 +12,8 @@ _items = [
             timeoutSeconds = 60
             validate = False
             xr = {
-                apiVersion = "aws.hops.ops.com.ai/v1alpha1"
-                kind = "CrossplaneAWSProvider"
+                apiVersion = "crossplane.ops.com.ai/v1alpha1"
+                kind = "AWSProviderStack"
                 metadata.name = "aws"
                 spec = {
                     clusterName = "my-cluster"
@@ -24,7 +24,7 @@ _items = [
             }
             assertResources = [
                 {
-                    apiVersion = "aws.hops.ops.com.ai/v1alpha1"
+                    apiVersion = "crossplane.ops.com.ai/v1alpha1"
                     kind = "PodIdentity"
                     metadata.name = "pod-identity"
                     spec = {
@@ -67,8 +67,8 @@ _items = [
             timeoutSeconds = 60
             validate = False
             xr = {
-                apiVersion = "aws.hops.ops.com.ai/v1alpha1"
-                kind = "CrossplaneAWSProvider"
+                apiVersion = "crossplane.ops.com.ai/v1alpha1"
+                kind = "AWSProviderStack"
                 metadata.name = "aws"
                 spec = {
                     clusterName = "my-cluster"

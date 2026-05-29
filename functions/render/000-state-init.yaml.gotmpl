@@ -3,7 +3,7 @@
     {{- $metadata := $xr.metadata | default dict }}
     {{- $spec := $xr.spec | default dict }}
 
-    {{- $name := $metadata.name | default "crossplane-aws-provider" }}
+    {{- $name := $metadata.name | default "crossplane-aws-provider-stack" }}
     {{- $clusterName := $spec.clusterName | default $name }}
     {{- $managementPolicies := $spec.managementPolicies | default (list "*") }}
 

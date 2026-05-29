@@ -1,5 +1,5 @@
-apiVersion: aws.hops.ops.com.ai/v1alpha1
-kind: CrossplaneAWSProvider
+apiVersion: crossplane.ops.com.ai/v1alpha1
+kind: AWSProviderStack
 metadata:
   name: aws
   namespace: default

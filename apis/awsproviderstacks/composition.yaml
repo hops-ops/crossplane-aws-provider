@@ -1,15 +1,15 @@
 apiVersion: apiextensions.crossplane.io/v1
 kind: Composition
 metadata:
-  name: crossplaneawsproviders.aws.hops.ops.com.ai
+  name: awsproviderstacks.crossplane.ops.com.ai
 spec:
   compositeTypeRef:
-    apiVersion: aws.hops.ops.com.ai/v1alpha1
-    kind: CrossplaneAWSProvider
+    apiVersion: crossplane.ops.com.ai/v1alpha1
+    kind: AWSProviderStack
   mode: Pipeline
   pipeline:
   - functionRef:
-      name: hops-ops-crossplane-aws-providerrender
+      name: hops-ops-crossplane-aws-provider-stackrender
     step: render
   - functionRef:
       name: crossplane-contrib-function-auto-ready

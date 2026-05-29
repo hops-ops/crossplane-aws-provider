@@ -1,7 +1,7 @@
 apiVersion: meta.dev.upbound.io/v2alpha1
 kind: Project
 metadata:
-  name: crossplane-aws-provider
+  name: crossplane-aws-provider-stack
 spec:
   dependsOn:
   - apiVersion: pkg.crossplane.io/v1
@@ -25,7 +25,7 @@ spec:
   license: Apache-2.0
   maintainer: Patrick Lee Scott <pat@patscott.io>
   readme: |
-    # crossplane-aws-provider
+    # crossplane-aws-provider-stack
     Installs the Crossplane AWS provider family, selected AWS family providers, PodIdentity, and AWS ProviderConfig.
-  repository: ghcr.io/hops-ops/crossplane-aws-provider
-  source: github.com/hops-ops/crossplane-aws-provider
+  repository: ghcr.io/hops-ops/crossplane-aws-provider-stack
+  source: github.com/hops-ops/crossplane-aws-provider-stack
